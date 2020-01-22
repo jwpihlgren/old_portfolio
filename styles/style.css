@@ -27,3 +27,17 @@ nav li:hover{
 
 }
 
+.fab{
+font-size: xx-large;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.dark{
+    color: #212529;
+}
+
+.dark:hover{
+    color: #15171a;
+}
+
