@@ -4,7 +4,7 @@
     background-size: cover;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1650px) {
     .whiteTextShadow {
       color: #e9e9e9;
 
@@ -18,5 +18,12 @@
 
  .bg-secondary
  {
-     background-color: #cfcfcf !important;
- }
+    background-color: #dfdddd !important;
+}
+
+
+li:hover{
+    text-decoration: underline;
+
+}
+

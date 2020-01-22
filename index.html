@@ -7,132 +7,136 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>J.Pihlgren</title>
 </head>
 
-<body>
-  <!--     <header class="jumbotron rounded-0 m-0" style="background-image: url('https://images.unsplash.com/photo-1578167597239-14f8fc680b6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1556&q=80);" id="welcome" >
- -->
-  <header class="jumbotron rounded-0 m-0 pt-0 welcome">
+<body class="bg-light">
+  <header class="welcome">
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Navbar</a>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Projects
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#cyborgbox">Cyborg Box</a>
-                <a class="dropdown-item" href="#drivetime">Drivetime</a>
-                <a class="dropdown-item" href="#noisemeter">Noisemeter</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#cv">CV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutme">About me</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-    </div>
-    <div class="container pt-5">
-      <h1 class="display-4 whiteTextShadow">Hi,</h1>
+      <div id="nav-wrap">
+      </div>
+      <h1 class="display-4 whiteTextShadow mt-5">Hi,</h1>
       <p class="lead d-inline-block whiteTextShadow">I'm Joachim, welcome to my online portfolio!</p>
       <hr class="my-4">
-      <p class="whiteTextShadow">Browse my previous work below or get in touch using any of my handles!</p>
+      <!-- Introduce myself, who am I and what do I do -->
+      <p class="whiteTextShadow pb-5 mb-0">Browse my previous work below or get in touch using any of my handles!</p>
     </div>
   </header>
-  <section class="jumbotron bg-light m-0">
+  <section class="jumbotron bg-light">
     <div class="container" id="projects">
       <h2 class="display-5 pb-3">Projects</h2>
       <div class="row">
-        <div class="col-sm-4 d-flex align-items-stretch">
+        <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch pb-sm-3 pb-md-5">
           <div class="card">
             <img src="/images/cybox.jpg" class="card-img-top" alt="...">
-            <div class="card-body d-flex flex-column"> <!-- align-items-start to move to button to the left side  -->
+            <div class="card-body d-flex flex-column">
+              <!-- align-items-start to move to button to the left side  -->
               <h5 class="card-title">Cyborg Box</h5>
               <p class="card-text">A socio-spatial experience where sight is substituted with ultra sonic range finders
                 and vibration motors.</p>
-              <a href="#cyborgbox" class="btn btn-outline-secondary mt-auto">Read more</a>
+              <a href="/projects/cyborgbox.html" class="btn btn-outline-secondary mt-auto">Read more</a>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 d-flex align-items-stretch">
+        <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch pb-sm-3 pb-md-5">
           <div class="card">
             <img src="/images/drivetime_crop.jpg" class="card-img-top" alt="...">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Drivetime</h5>
               <p class="card-text">Wizard of OZ prototype of an AI driven Quiz game for drivers in level 3 Autonomous
                 Vehicles.</p>
-              <a href="#drivetime" class="btn btn-outline-secondary mt-auto">Read more</a>
+              <a href="/projects/drivetime.html" class="btn btn-outline-secondary mt-auto">Read more</a>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 d-flex align-items-stretch">
+        <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch pb-sm-3 pb-md-5">
           <div class="card">
             <img src="/images/noisemeter.png" class="card-img-top" alt="...">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Noisemeter</h5>
               <p class="card-text">Concept design and prototype of a smart watch app that record decibel exposure and
                 informs the user when a decibel threshold has been met.</p>
-              <a href="#noisemeter" class="btn btn-outline-secondary mt-auto">Read more</a>
+              <a href="/projects/noisemeter.html" class="btn btn-outline-secondary mt-auto">Read more</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <section class="jumbotron bg-secondary rounded-0 m-0">
-    <div class="container" id="cyborgbox">
-      <h2 class="display-5 pb-3">Cyborg box</h2>
-      <div class="card mb-3">
-        <img class="card-img-top" src="/images/cybox_with_tv.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Photo by J.Pihlgren</small></p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="jumbotron bg-light rounded-0 m-0">
-    <div class="container" id="drivetime">
-      <h2 class="display-5 pb-3">Drivetime</h2>
-    </div>
-  </section>
-  <section class="jumbotron bg-secondary rounded-0 m-0">
-    <div class="container" id="noisemeter">
-      <h2 class="display-5 pb-3">Noisemeter</h2>
-    </div>
-  </section>
-  <section class="jumbotron bg-light rounded-0 m-0">
     <div class="container" id="cv">
       <h2 class="display-5 pb-3">CV</h2>
+      <h4 class="">Education</h4>
+      <hr class="my-2">
+      <ul class="list-group pb-5">
+        <li class="list-group-item">
+          <p>Chalmers University of Technology | Interaction Design and Technologies, Masters Programme | 2018 - 2020
+          </p>
+        </li>
+        <li class="list-group-item">
+          <p>University of Gothenburg | Cognitive Science, B.sc | 2015 - 2018
+          </p>
+        </li>
+      </ul>
+      <h4 class="">Vocational Experience</h4>
+      <hr class="my-2">
+      <ul class="list-group pb-5">
+        <li class="list-group-item">
+          <p>Chalmers University of Technology | Teaching Assistand in course "Prototyping in Interaction Design" | 2019 September - 2010 November
+          </p>
+        </li>
+        <li class="list-group-item">
+          <p>TNT | Warehouse Operative | 2016 - On going
+          </p>
+        </li>
+        <li class="list-group-item">
+          <p>Swedish Armed Forces | Rapid Reaction Light Infantry Group Commander | 2011 - 2015
+          </p>
+        </li>
+      </ul>
+      <h4 class="">Competences</h4>
+      <hr class="my-2">
+      <ul class="list-group pb-5">
+        <li class="list-group-item">
+          <p>Java | Object Oriented Programming and Graphical Interfaces | 15 Higher education credits
+          </p>
+        </li>
+        <li class="list-group-item">
+          <p>Javascript | DOM Manipulation | 7.5 Higher education credits
+          </p>
+        </li>
+        <li class="list-group-item">
+          <p>Python | Self taught |
+          </p>
+        </li>
+      </ul>
     </div>
   </section>
-  <section class="jumbotron bg-secondary rounded-0 m-0">
+  <section class="jumbotron bg-light rounded-0 m-0">
     <div class="container" id="aboutme">
       <h2 class="display-5 pb-3">About me</h2>
+      <p>As a child I wanted to work with computers. I got my first computer when I was five and I've never let them go.
+        Later on, I wanted to be a psychologist. Always fashinated with the behaviors of humans. So when I was presented 
+        with the scientific area of Cognitive science, the combination of IT and pyschology, in my adult life I knew I had found my match. 
+        It was here that I was introduced with interaction design and the challange of shaping products that are both useful and used.
+
+<!--         <h6 class="text-muted">My take on Interaction Design</h6>
+        <p></p> -->
+
+      </p>
     </div>
   </section>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="/scripts/script.js"></script>
 </body>
 
 </html>
