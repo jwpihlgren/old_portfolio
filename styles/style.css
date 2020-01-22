@@ -41,3 +41,16 @@ padding-right: 5px;
     color: #15171a;
 }
 
+
+@media (max-width: 1148px) {
+    .dark{
+        color: #ffffff;
+    }
+    
+    .dark:hover{
+        color: #c9c9c9;
+    }
+    
+}
+
+
