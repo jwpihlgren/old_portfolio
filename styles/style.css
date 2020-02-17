@@ -59,9 +59,9 @@ nav li:hover {
     font-weight: 400;
   }
 
-  .safari-fix{
-    object-fit: contain;
-  }
+img{
+  object-fit: contain !important;
+}
 
 
 }
