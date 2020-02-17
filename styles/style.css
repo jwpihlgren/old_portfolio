@@ -59,6 +59,10 @@ nav li:hover {
     font-weight: 400;
   }
 
+  .safari-fix{
+    object-fit: contain;
+  }
+
 
 }
 
@@ -88,6 +92,8 @@ li.inline + li.inline::before{
     background-color: currentColor;
 
 }
+
+
 
 
 
