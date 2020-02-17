@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>J.Pihlgren - Trending movies</title>
+</head>
+
+<body class="bg-light">
+    <header>
+        <div class="container">
+            <div id="nav-wrap">
+    </header>
+    <section class="jumbotron bg-secondary rounded-0 m-0">
+        <div class="container" id="noisemeter">
+            <h2 class="display-5 pb-3">Trending Movies</h2>
+            <div class="card mb-3">
+                <div class=" d-flex ">
+                        <img class="card-img-top" src="/images/trendingMoviesHome.png" alt="Card image cap">
+
+
+                </div>
+                <span class="card-text ml-3"><small class="text-muted">
+                    Picture by J.Pihlgren
+
+                    </small></span>
+
+                <div class="card-body">
+
+                    <h5 class="card-title">Description</h5>
+                    <p>
+                        <span class="card-text"> This is a personal project from when I did the <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">The Web Developer Bootcamp</a>
+                            on Udemy. The app scrapes 50 trending movies from IMDB using imdbScrapper and stores title, rating, synopsis, year and an image to a mongoDB database. This so that the app doesn't
+                            query imdbScrapper everytime the page reloads. It isn't finished but works good enough so that I can see what the trending movies are.
+                            <p>It uses node.js, express,mongo , mongoose, imdbScrapper, semanticUI and ejs to name a few. </p>
+                        </p>
+                    <h5 class="card-title">The project</h5>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h6>What</h6>
+                            <span class="card-text">
+                                A web app that scrapes trending movies from IMDB.
+                            </span>
+                            <h6>Why</h6>
+                            <span class="card-text">
+                                I don't have time to browse imdb for movies I want to watch.
+                            </span>
+                            <h6>Aim</h6>
+                            <span class="card-text">
+                                Provide myself with a quick overview of the latest movies.
+                            </span>
+                        </div>
+                        <div class="col-lg-4">
+                            <h6>The target group</h6>
+                            <span class="card-text">
+                                <ul>
+                                    <li>Myself</li>
+                                </ul>
+
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
