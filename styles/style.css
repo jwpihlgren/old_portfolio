@@ -106,6 +106,10 @@ nav li:hover {
   color: #212529;
 }
 
+.light{
+  color: #d6d6d6 !important;
+}
+
 .dark:hover {
   color: #15171a;
 }
