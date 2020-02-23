@@ -12,6 +12,7 @@ $(document).ready(function () {
     
     runPageIntro();
     addClickListenerToGif();
+    setTimeout(() => {
     const navbarToggler = $(".navbar-toggler");
 
 
@@ -28,7 +29,7 @@ $(document).ready(function () {
     
     
     // Home made toggler
-    setTimeout(() => {
+
         const spans = document.querySelectorAll("#nav-toggler span");
         const menuTogglerContainer = document.querySelector("#nav-toggler");
         //Toggle the menu on click
