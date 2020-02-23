@@ -3,15 +3,45 @@ const right = $(".right");
 const nav = $(".top");
 const welcome = $(".welcome");
 const projects = $(".projects");
-console.log(projects);
 
 
+
+
+loadHeaderToPages();
 $(document).ready(function () {
-    loadHeaderToPages();
+    
     runPageIntro();
     addClickListenerToGif();
+    const navbarToggler = $(".navbar-toggler");
+
+
+    $( "a[href*='/index.html#']").on("click", (e) => {
+
+        $(".navbar-collapse").toggleClass("show");
+        $(navbarToggler).toggleClass("collapsed");
+    });
+
+    $(window).on("scroll", (e) => {
+            $(".navbar-collapse").removeClass("show");
+            $(navbarToggler).addClass("collapsed");
+    })
+    
+    
+    // Home made toggler
+    setTimeout(() => {
+        const spans = document.querySelectorAll("#nav-toggler span");
+        const menuTogglerContainer = document.querySelector("#nav-toggler");
+        //Toggle the menu on click
+        //console.log(menuTogglerContainer);
+        menuTogglerContainer.addEventListener("click", event => {
+        toggleMenu(spans, menuTogglerContainer);
+    });
+    }, 100)
+
 
 });
+
+
 
 function loadHeaderToPages(){
     $("header .container #nav-wrap").load("/partials/header.html");
@@ -42,3 +72,18 @@ function runPageIntro() {
     $(welcome).toggleClass("visible");
     $(projects).toggleClass("visible"); 
 }
+
+
+
+//Home made toggler behavior
+
+//Toggle the close class on the spans for the hamburger menu.
+function toggleMenu(spans, menuTogglerContainer) {
+    for (let i = 0; i < spans.length; i++) {
+        spans[i].classList.toggle("close");
+        
+    }
+    menuTogglerContainer.classList.toggle("close")
+}
+
+
