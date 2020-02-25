@@ -12,35 +12,32 @@ $(document).ready(function () {
     
     runPageIntro();
     addClickListenerToGif();
-    setTimeout(() => {
-    const navbarToggler = $(".navbar-toggler");
-    console.log(navbarToggler);
 
-
-    $( "a[href*='/index.html#']").on("click", (e) => {
-
-        $(".navbar-collapse").toggleClass("show");
-        $(navbarToggler).toggleClass("collapsed");
-    });
-
-    $(window).on("scroll", (e) => {
-            $(".navbar-collapse").removeClass("show");
-            $(navbarToggler).addClass("collapsed");
-    })
-    
-    
     // Home made toggler
 
         const spans = document.querySelectorAll("#nav-toggler span");
-        console.log(spans);
         const menuTogglerContainer = document.querySelector("#nav-toggler");
+
+        console.log(spans);
         console.log(menuTogglerContainer);
-        //Toggle the menu on click
-        console.log(menuTogglerContainer);
+
+        //Toggle the menu on click link
+        $( "a[href*='/index.html#']").on("click", (e) => {
+            $(".navbar-collapse").removeClass("show");
+            closeMenu(spans, menuTogglerContainer);
+        });
+        
+        //Close on scroll
+        $(window).on("scroll", (e) => {
+                $(".navbar-collapse").removeClass("show");
+                closeMenu(spans, menuTogglerContainer);
+        })
+        
+        //On click, 
         menuTogglerContainer.addEventListener("click", event => {
         toggleMenu(spans, menuTogglerContainer);
     });
-    }, 100)
+
 
 
 });
@@ -88,6 +85,15 @@ function toggleMenu(spans, menuTogglerContainer) {
         
     }
     menuTogglerContainer.classList.toggle("close")
+}
+
+//Close the menu if it's open
+function closeMenu(spans, menuTogglerContainer) {
+    for (let i = 0; i < spans.length; i++) {
+        spans[i].classList.remove("close");
+        
+    }
+    menuTogglerContainer.classList.remove("close")
 }
 
 
