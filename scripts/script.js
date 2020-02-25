@@ -14,6 +14,7 @@ $(document).ready(function () {
     addClickListenerToGif();
     setTimeout(() => {
     const navbarToggler = $(".navbar-toggler");
+    console.log(navbarToggler);
 
 
     $( "a[href*='/index.html#']").on("click", (e) => {
@@ -31,9 +32,11 @@ $(document).ready(function () {
     // Home made toggler
 
         const spans = document.querySelectorAll("#nav-toggler span");
+        console.log(spans);
         const menuTogglerContainer = document.querySelector("#nav-toggler");
+        console.log(menuTogglerContainer);
         //Toggle the menu on click
-        //console.log(menuTogglerContainer);
+        console.log(menuTogglerContainer);
         menuTogglerContainer.addEventListener("click", event => {
         toggleMenu(spans, menuTogglerContainer);
     });
