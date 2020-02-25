@@ -55,7 +55,7 @@ function loadHeaderToPages(_callback){
     $("header .container #nav-wrap").load("/partials/header.html");
     setTimeout(() => {
         _callback();
-    }, 100)
+    }, 200)
  
 }
 
