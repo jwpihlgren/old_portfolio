@@ -16,6 +16,9 @@ $(document).ready(() => {
 
     // Home made toggler
 
+});
+
+function setUpMenuToggler () {
     const spans = document.querySelectorAll("#nav-toggler span");
     const menuTogglerContainer = document.querySelector("#nav-toggler");
 
@@ -38,22 +41,15 @@ $(document).ready(() => {
     menuTogglerContainer.addEventListener("click", event => {
         toggleMenu(spans, menuTogglerContainer);
     });
-
-});
+  }
 
 
 
 function loadHeaderToPages() {
-    $("header .container #nav-wrap").load("/partials/header.html");
-    console.log(document.querySelector("#nav-toggler"));
-    let test = document.querySelector("#nav-toggler");
-
-    setTimeout(() => {
-        test = document.querySelector("#nav-toggler");
-    }, 200)
-
-
-
+    $("header .container #nav-wrap").load("/partials/header.html", () => {
+        console.log("Ready");
+        setUpMenuToggler();
+    });
 }
 
 function addClickListenerToGif() {
