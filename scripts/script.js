@@ -22,9 +22,6 @@ function setUpMenuToggler () {
     const spans = document.querySelectorAll("#nav-toggler span");
     const menuTogglerContainer = document.querySelector("#nav-toggler");
 
-    console.log(spans);
-    console.log(menuTogglerContainer);
-
     //Toggle the menu on click link
     $("a[href*='/index.html#']").on("click", (e) => {
         $(".navbar-collapse").removeClass("show");
@@ -47,7 +44,6 @@ function setUpMenuToggler () {
 
 function loadHeaderToPages() {
     $("header .container #nav-wrap").load("/partials/header.html", () => {
-        console.log("Ready");
         setUpMenuToggler();
     });
 }
