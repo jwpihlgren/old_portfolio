@@ -33,13 +33,12 @@ function setUpMenuToggler () {
         $(".navbar-collapse").removeClass("show");
         closeMenu(spans, menuTogglerContainer);
     })
-
     //On click, 
     menuTogglerContainer.addEventListener("click", event => {
         toggleMenu(spans, menuTogglerContainer);
     });
   }
-
+ 
 
 
 function loadHeaderToPages() {
