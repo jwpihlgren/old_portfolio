@@ -80,6 +80,12 @@
   box-shadow: 1px 1px 8px rgb(185, 185, 185);
 }
 
+.card.projects img.card-img-top{
+  height: 250px;
+  object-fit: cover;
+
+}
+
 .bg-secondary {
   background-color: #dfdddd !important;
 }
